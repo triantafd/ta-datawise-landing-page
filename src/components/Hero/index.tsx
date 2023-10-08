@@ -1,4 +1,4 @@
-import TextFieLd from "components/TextField";
+import ButtonCta from "components/ButtonCta";
 
 function Hero() {
   return (
@@ -25,18 +25,18 @@ function Hero() {
           <div
             className="flex  w-full space-x-4 lg:justify-start"
           >
-            <TextFieLd label={'Get It On Chrome'} />
+            <ButtonCta label={'Get It On Chrome'} />
           </div>
         </div>
 
         {/* <!-- Image --> */}
         <div className="hidden lg:flex lg:absolute right-0">
 
-          <img
+          {/* <img
             src="images/iphone-desktop.svg"
             alt=""
             className=""
-          />
+          /> */}
         </div>
       </div>
     </section>

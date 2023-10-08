@@ -1,5 +1,7 @@
 import Hero from "components/Hero";
-import TextFieLd from "components/TextField";
+import ButtonCta from "components/ButtonCta";
+import FullSizeRectangle from "components/Rectangle";
+import Content from "components/Content";
 
 function Navbar() {
   return (
@@ -23,7 +25,7 @@ function Navbar() {
 
             <a href="/" className="label1 text-black hover:text-primary transition-colors duration-300"
             >Resources</a>
-            <TextFieLd label={'Get the App'} />
+            <ButtonCta label={'Get the App'} />
           </div >
 
 
@@ -35,6 +37,8 @@ function Navbar() {
         </div >
       </div>
       <Hero />
+      <FullSizeRectangle text={`over 200,000+ users have chosen COINCASH for everyday payments`} />
+      <Content />
     </div >
   );
 }

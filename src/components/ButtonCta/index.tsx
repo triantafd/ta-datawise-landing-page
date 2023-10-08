@@ -1,17 +1,17 @@
 import React from 'react';
 
-interface CTAButtonProps {
+interface ICTAButtonProps {
   label: string;
   onClick?: () => void;
   disabled?: boolean;
 }
 
-const CTAButton: React.FC<CTAButtonProps> = ({ label, onClick, disabled }) => {
+const CTAButton: React.FC<ICTAButtonProps> = ({ label, onClick, disabled }) => {
   return (
     <button
-      className={`transition-colors duration-300 px-6 py-3 rounded-[4px] shadow-md ${disabled
+      className={`flex-shrink-0 transition-colors duration-300 px-6 py-3 rounded-[4px] shadow-md ${disabled
         ? 'bg-gray cursor-not-allowed'
-        : 'bg-primary hover:bg-darkPrimary'}  space-x-2 `}
+        : 'bg-primary hover:bg-darkPrimary'}  space-x-2 min-w-lg`}
       onClick={onClick}
       disabled={disabled}
     >

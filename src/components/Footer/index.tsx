@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import TextFieLd from "components/TextField";
+import ButtonCta from "components/ButtonCta";
 
 const validateEmail = (email: string): boolean => {
   const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
@@ -34,20 +34,22 @@ function Footer() {
               </p>
             </div >
 
-            <div className="flex items-center text-center mx-auto">
-              <div
-                className="flex lg:space-x-3 items-center bg-white p-2  shadow-md rounded-sm"
-              >
+
+            <div className="flex justify-center">
+              <div className="flex items-center justify-center bg-white p-2 rounded relative max-w-sm">
                 <input
+                  type="text"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  placeholder="Type your email address here"
-                  className="body2 p-2 px-4 text-center  md:text-left placeholder:md:text-left focus:outline-none"
-                >
-                </input>
-                <TextFieLd label={'Sign Up'} onClick={() => { }} disabled={!isEmailValid} />
+                  placeholder="Your placeholder here"
+                  className="flex-grow truncate py-2 px-3 rounded-l outline-none focus:ring focus:ring-indigo-200 transition duration-150 ease-in-out"
+                />
+
+                {/* Button */}
+                <ButtonCta label={'Sign Up'} onClick={() => { }} disabled={!isEmailValid} />
               </div>
             </div>
+
 
 
             <div className="flex flex-col lg:flex-row justify-between items-center space-y-12 lg:space-y-0 w-full">
