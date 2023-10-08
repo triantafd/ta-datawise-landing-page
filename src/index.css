@@ -49,6 +49,24 @@
   }
 }
 
+.options-container {
+  overflow-x: auto; /* This ensures it scrolls when content overflows */
+}
+
+.options-container::-webkit-scrollbar {
+  height: 4px; 
+}
+
+.options-container::-webkit-scrollbar-track {
+  background: #A3A6AA;
+  border-radius: 2px;
+}
+
+.options-container::-webkit-scrollbar-thumb {
+  background: #0066ff;
+  border-radius: 2px;
+}
+
 .hero.bg body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
