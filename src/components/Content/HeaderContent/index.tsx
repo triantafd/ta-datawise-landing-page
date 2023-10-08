@@ -7,7 +7,7 @@ interface IContentHeaderProps {
 const ContentHeader: React.FC<IContentHeaderProps> = () => {
   return (
     <div className="flex flex-col space-y-24 md:mt-0">
-      <div className="flex flex-col space-y-2">
+      <div className="flex flex-col space-y-4">
         <h1
           className="header1 text-center text-black"
         >

@@ -12,7 +12,7 @@ interface ContentProps {
 
 const Content: React.FC<ContentProps> = () => {
   return (
-    <div className="bg-white pb-0">
+    <div className="bg-white pb-8">
       <div className='container mx-auto p-12 flex flex-col'>
         <div className='flex flex-col space-y-12 md:space-y-24'>
           {/*      Header + further description */}

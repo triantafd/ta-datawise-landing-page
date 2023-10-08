@@ -17,7 +17,7 @@ function Footer() {
     <section id="footer">
       <div className='bg-gradient-dark'>
         <div
-          className="mt-10 container flex flex-col  mx-auto p-12 pb-6 lg:mb-0"
+          className="container flex flex-col  mx-auto p-12 pb-6 lg:mb-0"
         >
           {/*      <!-- Content --> */}
           <div className="flex flex-col space-y-24 lg:mt-0">
