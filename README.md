@@ -1,6 +1,6 @@
 # Technical assignment for Datawise
 
-### [Mockups](Mockups)
+### [Mockups](mockups)
 
 ## Code instructions
   ### 1. How to run the app 
