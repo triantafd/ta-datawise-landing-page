@@ -35,14 +35,14 @@ function Footer() {
             </div >
 
 
-            <div className="flex justify-center">
-              <div className="flex items-center justify-center bg-white p-2 rounded relative max-w-sm">
+            <div className="relative flex justify-center">
+              <div className="flex items-center justify-center bg-white p-2 rounded relative max-w-sm w-full">
                 <input
                   type="text"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="Type your email here"
-                  className="flex-grow body2 truncate py-2 px-3 rounded-l outline-none"
+                  className="body2 truncate py-2 px-1 rounded-l outline-none"
                 />
 
                 {/* Button */}
