@@ -17,7 +17,7 @@ module.exports = {
       },
       backgroundImage: theme => ({
         'gradient-light': 'linear-gradient(to bottom, #FFFFFF 0%,  #FFFFFF 0%, #0066FF)',
-        'gradient-dark': 'linear-gradient(to bottom, #020D1F 20%, #020D1F 100%, #0066FF 20%)'
+        'gradient-dark': 'linear-gradient(to bottom, #020D1F, #0066FF)'
       }),
       fontFamily: {
         'poppins': ['Poppins', 'sans-serif'],

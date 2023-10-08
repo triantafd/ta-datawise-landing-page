@@ -15,9 +15,9 @@ const Content: React.FC<ContentProps> = () => {
     <div className="bg-white pb-0">
       <div className='container mx-auto p-12 flex flex-col'>
         <div className='flex flex-col space-y-12 md:space-y-24'>
-          {/*      Section (Header + Body) */}
+          {/*      Header + further description */}
           <ContentHeader />
-          {/*      Section (Icons) + Description  */}
+          {/*     Options  */}
           <Options optionsData={optionsData} />
           {/* <!-- MainContent --> */}
           <MainContent rows={mainContentData} />
