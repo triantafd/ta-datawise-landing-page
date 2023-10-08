@@ -1,7 +1,7 @@
-import Hero from "components/Hero";
 import ButtonCta from "components/ButtonCta";
 import FullSizeRectangle from "components/Rectangle";
 import Content from "components/Content";
+import Hero from "components/Hero";
 
 function Navbar() {
   return (
@@ -37,7 +37,9 @@ function Navbar() {
         </div >
       </div>
       <Hero />
-      <FullSizeRectangle text={`over 200,000+ users have chosen COINCASH for everyday payments`} />
+      <div className="relative z-10">
+        <FullSizeRectangle text={`over 200,000+ users have chosen COINCASH for everyday payments`} />
+      </div>
       <Content />
     </div >
   );
