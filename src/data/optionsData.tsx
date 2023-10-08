@@ -1,7 +1,7 @@
 export const optionsData = [
   {
     imgSrc: 'images/Airplane-Ticket.svg',
-    children: (
+    content: (
       <>
         You can <br />
         <span className='text-primary'>book</span> tickets
@@ -10,7 +10,7 @@ export const optionsData = [
   },
   {
     imgSrc: 'images/Cart.svg',
-    children: (
+    content: (
       <>
         You can <br />
         <span className='text-primary'>buy</span> groceries
@@ -19,7 +19,7 @@ export const optionsData = [
   },
   {
     imgSrc: 'images/Page.svg',
-    children: (
+    content: (
       <>
         You can <br />
         <span className='text-primary'>pay</span> your bills

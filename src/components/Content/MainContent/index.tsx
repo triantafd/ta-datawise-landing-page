@@ -14,7 +14,7 @@ interface IMainContent {
 }
 
 
-const Row: React.FC<IRowProps> = ({ image, header, body, reverse }) => {
+const MainContentRow: React.FC<IRowProps> = ({ image, header, body, reverse }) => {
   console.log(reverse)
   const flexAndSpacingDirection = reverse ? "md:flex-row-reverse" : "md:flex-row";
   const paddingSide = reverse ? "md:pr-12" : "md:pl-12";
@@ -39,7 +39,7 @@ const MainContent: React.FC<IMainContent> = ({ rows }) => {
   return (
     <div className='flex flex-col space-y-12 md:space-y-24'>
       {rows.map((row, idx) => (
-        <Row key={idx} {...row} reverse={idx % 2 !== 0} />
+        <MainContentRow key={idx} {...row} reverse={idx % 2 !== 0} />
       ))}
     </div>
   )

@@ -1,11 +1,11 @@
-import React, { ReactElement } from 'react';
+import React from 'react';
 
 interface IOptionItem {
   imgSrc: string
-  children: React.ReactNode
+  content: React.ReactElement
 }
 
-const OptionItem: React.FC<IOptionItem> = ({ imgSrc, children }) => {
+const OptionItem: React.FC<IOptionItem> = ({ imgSrc, content }) => {
   return (
     <div className="flex flex-col space-y-4">
       <div className="flex items-center justify-center space-x-20" >
@@ -14,7 +14,7 @@ const OptionItem: React.FC<IOptionItem> = ({ imgSrc, children }) => {
       <p
         className="body2 text-center text-black p-2"
       >
-        {children}
+        {content}
       </p>
     </div >
   );

@@ -3,6 +3,7 @@ import Options from './Options';
 import MainContent from './MainContent';
 import { mainContentData } from 'data/mainContent';
 import ContentHeader from './HeaderContent';
+import { optionsData } from 'data/optionsData';
 
 
 interface ContentProps {
@@ -17,7 +18,7 @@ const Content: React.FC<ContentProps> = () => {
           {/*      Section (Header + Body) */}
           <ContentHeader />
           {/*      Section (Icons) + Description  */}
-          <Options />
+          <Options optionsData={optionsData} />
           {/* <!-- MainContent --> */}
           <MainContent rows={mainContentData} />
         </div>
