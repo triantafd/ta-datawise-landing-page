@@ -1,7 +1,8 @@
+/** @format */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 
 /* Mobile Styles */
 
@@ -17,16 +18,18 @@
   @apply font-poppins text-[32px] font-bold leading-[48px];
 }
 
+.header2 {
+  @apply font-poppins text-[24px] font-semibold leading-[34px];
+}
+
 .body2 {
   @apply font-poppins text-[16px] font-normal leading-[24px];
 }
 
-
-
 /* Desktop Styles using Tailwind's default 'md' breakpoint */
-@media screen(lg) { 
+@media screen(lg) {
   .label1 {
-      @apply font-poppins text-[20px] font-semibold leading-[30px];
+    @apply font-poppins text-[20px] font-semibold leading-[30px];
   }
 
   .label2 {
@@ -37,24 +40,25 @@
     @apply font-poppins text-[48px] font-bold leading-[72px];
   }
 
+  .header2 {
+    @apply font-poppins text-[36px] font-bold leading-[54px];
+  }
+
   .body2 {
     @apply font-poppins text-[20px] font-normal leading-[30px];
   }
 }
 
-.hero.bg
-
-
-body {
+.hero.bg body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }

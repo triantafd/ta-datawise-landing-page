@@ -17,7 +17,7 @@ function Footer() {
     <section id="footer">
       <div className='bg-gradient-dark'>
         <div
-          className="mt-60 container flex flex-col  mx-auto p-12 pb-6 lg:mb-0"
+          className="mt-10 container flex flex-col  mx-auto p-12 pb-6 lg:mb-0"
         >
           {/*      <!-- Content --> */}
           <div className="flex flex-col space-y-24 lg:mt-0">
@@ -41,8 +41,8 @@ function Footer() {
                   type="text"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  placeholder="Your placeholder here"
-                  className="flex-grow truncate py-2 px-3 rounded-l outline-none focus:ring focus:ring-indigo-200 transition duration-150 ease-in-out"
+                  placeholder="Type your email here"
+                  className="flex-grow body2 truncate py-2 px-3 rounded-l outline-none"
                 />
 
                 {/* Button */}
